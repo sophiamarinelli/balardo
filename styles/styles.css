@@ -93,7 +93,7 @@ a:visited {
         text-align: center;
         bottom: 0;
         font-family: 'arial_blackregular';
-        font-size: 9em;
+        font-size: 10em;
     }
 
 
@@ -103,12 +103,13 @@ a:visited {
 
     .menu {
         position: absolute;
-        top: 0;
         left: 0;
+        top: 0;
+        z-index: 1;
     }
 
     .menuSpacer {
-        padding-top: 20px
+        padding-top: 50px;
     }
 
     nav ul,
@@ -120,22 +121,29 @@ a:visited {
 
     /* FIRST LEVEL */
 
+    nav {
+        padding-top: 30px;
+
+    }
+
     nav>ul>li {
         float: left;
     }
 
     nav>ul>li>a {
         padding-right: 30px;
+        padding-left: 30px;
         text-align: center;
     }
 
-    .menuItem {
-        padding-right: 50px;
+    nav:hover {
+        width: 30%;
+        height: 100vh;
+        background: #efefef;
     }
 
-    nav>ul>li:hover>a {
-        background-color: #CCCCCC;
-    }
+
+    nav>ul>li:hover>a {}
 
     /* DROP DOWN */
 
@@ -144,7 +152,6 @@ a:visited {
         position: absolute;
         left: 0;
         width: 100%;
-        background-color: #EDD;
     }
 
     nav>ul>li:hover ul {
@@ -154,6 +161,7 @@ a:visited {
 
     nav>ul>li>ul a {
         display: block;
+        padding-left: 30px;
     }
 
 
@@ -206,6 +214,6 @@ a:visited {
         text-align: center;
         bottom: 0;
         font-family: 'arial_blackregular';
-        font-size: 9em;
+        font-size: 10em;
     }
 }
