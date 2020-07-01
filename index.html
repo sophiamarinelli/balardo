@@ -8,50 +8,54 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.fittext.js"></script>
     <script type="text/javascript" src="js/script.js">
     </script>
 </head>
 
 <body>
-    <div class="logo">
-        <h1 class="stretch">BALARDO</h1>
-    </div>
-    <nav class="menu">
-        <ul>
-            <li class="menuItem">
-                <a id="press" href="#">Press</a>
-                <ul>
-                    <div class="menuSpacer"></div>
-                    <li><a href="">Link 1</a></li>
-                    <li><a href="">Link 2</a></li>
-                </ul>
-            </li>
-            <li class="menuItem">
-                <a id="projects" href="#">Projects</a>
-                <ul>
-                    <div class="menuSpacer"></div>
-                    <li><a href="">Project 1</a></li>
-                    <li><a href="">Project 2</a></li>
-                </ul>
-            </li>
-            <li class="menuItem">
-                <a id="contact" href="#">Contact</a>
-                <ul>
-                    <div class="menuSpacer"></div>
-                    <li><a href="">Contact 1</a></li>
-                    <li><a href="">Contact 2</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-    <div class="splash">
-        <video id="splashFootage" playsinline autoplay muted loop>
-            <source src="assets/Balardo_Splash.mp4" type="video/mp4">
-        </video>
-    </div>
-    <div class="footer" id="stretch">
-        <div class="stretch">BALARDO</div>
+    <div class="indexcontainer">
+        <div class="logo">
+            <h1 class="stretch">BALARDO</h1>
+            <div class="logoDiv">
+                <img id="logoImage" src="assets/logo.png">
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li class="menuItem">
+                    <a id="projects" href="#">PROJECTS</a>
+                    <ul>
+                        <div class="menuSpacer"></div>
+                        <li><a href="projects/project1/project1.html">Project 1</a></li>
+                        <li><a href="projects/project2.html">Project 2</a></li>
+                    </ul>
+                </li>
+                <li class="menuItem">
+                    <a id="press" href="#">PRESS</a>
+                    <ul>
+                        <div class="menuSpacer"></div>
+                        <li><a href="">Link 1</a></li>
+                        <li><a href="">Link 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="quote">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis massa maximus turpis sagittis, imperdiet ornare justo facilisis. Phasellus viverra augue eget massa rhoncus, ut sollicitudin neque lacinia." - QUOTE</p>
+        </div>
+        <div class="splash">
+            <div class="sound">Click for sound</div>
+            <video id="splashFootage" playsinline autoplay muted loop>
+                <source src="assets/Balardo_Splash.mp4" type="video/mp4">
+            </video>
+            <!-- <button class="mute-video">Click for sound</button> -->
+        </div>
+        <div class="footercontainer">
+            <div class="contact">ALL INQUIRIES - contact@contact.com</div>
+            <a href="../../index.html">
+                <svg viewBox="0 0 1920 310"><text class="stretch footer" x="0" y="300">BALARDO</text></svg>
+            </a>
+        </div>
     </div>
 </body>
 
