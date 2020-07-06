@@ -44,14 +44,14 @@ $(function() {
         if ($(".mobilemenu").css("display") != "none") {
             $(".mobilemenu").click(function() {
                 $(".menu").show();
-                $(".projectfootercontainer").css("position", "absolute")
+                $(".footercontainer").css("position", "absolute")
             })
             $(".x").click(function() {
                 $(".menu").hide();
-                $(".projectfootercontainer").css("position", "relative")
+                $(".footercontainer").css("position", "relative")
             })
         } else {
-            $(".projectfootercontainer").css("position", "relative")
+            $(".footercontainer").css("position", "relative")
         }
     }
 
