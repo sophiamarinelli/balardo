@@ -8,8 +8,6 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/script.js">
-    </script>
 </head>
 
 <body>
@@ -20,7 +18,16 @@
                 <img id="logoImage" src="assets/Logo.png">
             </div>
         </div>
+        <div class="quote">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis massa maximus turpis sagittis, imperdiet ornare justo facilisis. Phasellus viverra augue eget massa rhoncus, ut sollicitudin neque lacinia." - QUOTE</p>
+        </div>
+        <div class="mobilemenu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
         <nav class="menu">
+            <div class="x">X</div>
             <ul>
                 <li class="menuItem">
                     <a id="projects" href="#">PROJECTS</a>
@@ -40,15 +47,12 @@
                 </li>
             </ul>
         </nav>
-        <div class="quote">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis massa maximus turpis sagittis, imperdiet ornare justo facilisis. Phasellus viverra augue eget massa rhoncus, ut sollicitudin neque lacinia." - QUOTE</p>
-        </div>
-        <div class="splash">
-            <div class="sound">Click for sound</div>
+        <div class="video_container">
+            <div class="buttons">CLICK FOR SOUND
+            </div>
             <video id="splashFootage" playsinline autoplay muted loop>
                 <source src="assets/Balardo_Splash.mp4" type="video/mp4">
             </video>
-            <!-- <button class="mute-video">Click for sound</button> -->
         </div>
         <div class="footercontainer">
             <div class="contact">ALL INQUIRIES - contact@contact.com</div>
@@ -57,6 +61,8 @@
             </a>
         </div>
     </div>
+    <script type="text/javascript" src="js/script.js">
+    </script>
 </body>
 
 </html>

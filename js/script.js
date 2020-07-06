@@ -21,18 +21,48 @@ lightbox.addEventListener('click', e => {
 
 
 $(function() {
+    checkSize();
+    $(window).resize(checkSize);
 
     $("video").prop('muted', true);
 
-    $(".mute-video").click(function() {
+    $(".buttons").click(function() {
         if ($("video").prop('muted')) {
             $("video").prop('muted', false);
             $(this).addClass('unmute-video');
+            $(".buttons").html('CLICK TO MUTE')
 
         } else {
             $("video").prop('muted', true);
+            $(".buttons").html('CLICK FOR SOUND')
             $(this).removeClass('unmute-video');
         }
         console.log($("video").prop('muted'))
     });
+
+    function checkSize() {
+        if ($(".mobilemenu").css("display") != "none") {
+            $(".mobilemenu").click(function() {
+                $(".menu").show();
+                $(".projectfootercontainer").css("position", "absolute")
+            })
+            $(".x").click(function() {
+                $(".menu").hide();
+                $(".projectfootercontainer").css("position", "relative")
+            })
+        } else {
+            $(".projectfootercontainer").css("position", "relative")
+        }
+    }
+
+    // function checkSize() {
+    //     if ($(".mobilemenu").css("display" != "none")) {
+    //         
+    //     } else {
+    //         
+
+    //     }
+    // }
+
+
 });
