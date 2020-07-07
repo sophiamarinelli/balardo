@@ -45,15 +45,12 @@ $(function() {
             $(".mobilemenu").click(function() {
                 $(".menu").show();
                 $("body").css("overflow", "hidden");
-                $(".footercontainer").css("position", "absolute")
             })
             $(".x").click(function() {
                 $(".menu").hide();
-                $(".footercontainer").css("position", "relative")
                 $("body").css("overflow", "visible");
             })
         } else {
-            $(".footercontainer").css("position", "relative");
             $("body").css("overflow", "visible");
         }
     }
