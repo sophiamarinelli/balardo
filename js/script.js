@@ -44,14 +44,17 @@ $(function() {
         if ($(".mobilemenu").css("display") != "none") {
             $(".mobilemenu").click(function() {
                 $(".menu").show();
-                $("body").css("overflow", "hidden");
+                // $("body").css("overflow", "hidden");
+                // $(".footercontainer").css("position", "relative")
             })
             $(".x").click(function() {
                 $(".menu").hide();
-                $("body").css("overflow", "visible");
+                // $(".footercontainer").css("position", "relative")
+                // $("body").css("overflow", "visible");
             })
         } else {
-            $("body").css("overflow", "visible");
+            // $(".footercontainer").css("position", "relative");
+            // $("body").css("overflow", "visible");
         }
     }
 
