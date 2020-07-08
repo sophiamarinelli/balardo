@@ -29,9 +29,11 @@ $(function() {
         if ($(".mobilemenu").css("display") != "none") {
             $(".mobilemenu").click(function() {
                 $(".menu").show();
+                $("body").css("overflow", "hidden")
             })
             $(".x").click(function() {
                 $(".menu").hide();
+                $("body").css("overflow", "visible")
             })
         } else {}
     }
