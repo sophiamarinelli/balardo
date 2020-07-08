@@ -32,6 +32,7 @@ $(function() {
                 $("body").css("overflow", "hidden")
             })
             $(".x").click(function() {
+                console.log('hello')
                 $(".menu").hide();
                 $("body").css("overflow", "visible")
             })

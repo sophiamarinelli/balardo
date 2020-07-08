@@ -281,7 +281,7 @@ a:visited {
     }
 
     #lightbox img {
-        max-width: 90%;
+        max-width: 85%;
     }
 
     #lightbox.active {
