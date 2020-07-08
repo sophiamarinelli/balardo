@@ -106,17 +106,15 @@ a:visited {
     nav {
         padding-top: 10px;
         position: relative;
-        display: table;
         width: 100%;
         height: 100%;
     }
 
     nav>ul {
-        display: table-cell;
+        position: absolute;
         text-align: center;
-        vertical-align: middle;
         width: 100%;
-        height: 100%;
+        top: 300px;
     }
 
 

@@ -1,4 +1,4 @@
-console.log('hello')
+//PROJECT'S LIGHTBOX// 
 const lightbox = document.createElement('div')
 lightbox.id = 'lightbox'
 document.body.appendChild(lightbox)
@@ -21,17 +21,27 @@ lightbox.addEventListener('click', e => {
 
 
 $(function() {
+    //CALLING FUNCTION TO CHECK WINDOW SIZE//
     checkSize();
     $(window).resize(checkSize);
 
+    function checkSize() {
+        if ($(".mobilemenu").css("display") != "none") {
+            $(".mobilemenu").click(function() {
+                $(".menu").show();
+            })
+            $(".x").click(function() {
+                $(".menu").hide();
+            })
+        } else {}
+    }
+    //VIDEO SOUND ON AND OFF//
     $("video").prop('muted', true);
-
     $(".buttons").click(function() {
         if ($("video").prop('muted')) {
             $("video").prop('muted', false);
             $(this).addClass('unmute-video');
             $(".buttons").html('CLICK TO MUTE')
-
         } else {
             $("video").prop('muted', true);
             $(".buttons").html('CLICK FOR SOUND')
@@ -39,33 +49,4 @@ $(function() {
         }
         console.log($("video").prop('muted'))
     });
-
-    function checkSize() {
-        if ($(".mobilemenu").css("display") != "none") {
-            $(".mobilemenu").click(function() {
-                $(".menu").show();
-                // $("body").css("overflow", "hidden");
-                // $(".footercontainer").css("position", "relative")
-            })
-            $(".x").click(function() {
-                $(".menu").hide();
-                // $(".footercontainer").css("position", "relative")
-                // $("body").css("overflow", "visible");
-            })
-        } else {
-            // $(".footercontainer").css("position", "relative");
-            // $("body").css("overflow", "visible");
-        }
-    }
-
-    // function checkSize() {
-    //     if ($(".mobilemenu").css("display" != "none")) {
-    //         
-    //     } else {
-    //         
-
-    //     }
-    // }
-
-
 });
